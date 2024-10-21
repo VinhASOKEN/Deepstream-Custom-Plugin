@@ -1,0 +1,20 @@
+[property]
+enable=1
+config-width=1920
+config-height=1080
+
+## Set mode for custom plugin
+    # 0 for don't use
+    # 1 for use
+template-mode=1
+draw-mode=1
+update-mode=1
+max-frame-unseen-to-remove=1000  
+max-pre-result-per-object=50
+
+## Config format output LPR
+[format-output-lpr-stream-0]
+template-1=\d{2}[A-Z]{1}\d{5}
+template-2=\d{2}[A-Z]{1}\d{6}
+template-3=\d{2}[A-Z]{1}\d{4}[A-Z]{1}
+template-4=\d{2}[A-Z]{1}\d{3}[A-Z]{1}

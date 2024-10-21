@@ -1,0 +1,2 @@
+cd /gst-icdslpr
+make
