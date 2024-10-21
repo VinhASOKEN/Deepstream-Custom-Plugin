@@ -31,4 +31,4 @@ This custom plugin filters and maintains the display of license plate recognitio
 
 ### Installation
 1. Clone the repository
-2. Flowing step by step in instruction.h.
+2. Intall by flowing step by step in instruction.h.
