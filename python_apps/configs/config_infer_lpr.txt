@@ -1,0 +1,27 @@
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+#0=RGB, 1=BGR
+model-color-format=2
+infer-dims=1;320;320
+onnx-file=/Vinh_Detection/runs_demo_model_s_lpr_v3_320_gray/train/weights/best_STN_residual-nms.onnx
+labelfile-path=/Vinh_Detection/runs_demo_model_s_lpr_v2_320_gray/classes.txt
+model-engine-file=/Vinh_Detection/runs_demo_model_s_lpr_v3_320_gray/train/weights/best_STN_residual-nms.onnx_b1_gpu0_fp32.engine
+batch-size=1
+process-mode=2
+network-mode=0
+gie-unique-id=3
+network-type=1
+operate-on-gie-id=2
+## 0=Group Rectangles, 1=DBSCAN, 2=NMS, 3= DBSCAN+NMS Hybrid, 4 = None(No clustering)
+maintain-aspect-ratio=1
+secondary-reinfer-interval=5
+alignment-type=2
+
+classifier-threshold=0.5
+classifier-async-mode=1
+
+#input-object-min-width=16
+#input-object-min-height=16
+parse-classifier-func-name=NvDsInferParseCustomYoloV8LPR
+custom-lib-path=/Vinh_Deepstream/deepstream_python_apps/apps/deepstream_custom/nvdsinfer_custom_impl_Yolov8/libnvdsinfer_custom_impl_Yolo.so

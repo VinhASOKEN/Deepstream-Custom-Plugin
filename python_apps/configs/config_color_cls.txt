@@ -1,0 +1,23 @@
+[property]
+gpu-id=0
+net-scale-factor=1
+offsets=0.0;0.0;0.0
+infer-dims=3;224;224
+onnx-file=/Vinh_extract_data/Deepstream/mobilenet_v3_large_color_cls_v4/car_color_cls_mobilenet_v3_large_v4.onnx
+model-engine-file=/Vinh_extract_data/Deepstream/mobilenet_v3_large_color_cls_v4/car_color_cls_mobilenet_v3_large_v4.onnx_b1_gpu0_fp32.engine
+labelfile-path=/Vinh_extract_data/Deepstream/mobilenet_v3_large_color_cls_v4/labels.txt
+batch-size=1
+model-color-format=0
+## 0=FP32, 1=INT8, 2=FP16 mode
+network-mode=0
+process-mode=2
+is-classifier=1
+gie-unique-id=2
+output-blob-names=predictions/Softmax
+classifier-async-mode=1
+classifier-threshold=0.6
+input-object-min-width=16
+input-object-min-height=16
+operate-on-gie-id=1
+operate-on-class-ids=1;2;4;6
+maintain-aspect-ratio=0
